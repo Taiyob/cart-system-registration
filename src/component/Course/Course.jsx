@@ -10,19 +10,18 @@ const Course = ({course, handleShowTitle}) => {
                 <img src={cover} alt="Shoes" className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">
-                <h2 className="card-title">{title}</h2>
-                <p>
-                    {description}
-                </p>
-                <div >
-                    <div className='w-full'><FiDollarSign></FiDollarSign> Price: {price}</div>
-                    <div className='w-full'><BsBook></BsBook> Credit: {credit}hr</div>
+                <h2 className="card-title text-2xl">{title}</h2>
+                <p>{description}</p>
+                <div className="flex justify-between gap-5">
+                    <div className='flex items-center text-2xl'><FiDollarSign /> Price: {price}</div>
+                    <div className='flex items-center text-2xl'><BsBook />  Credit: {credit}hr</div>
                 </div>
                 <div className="card-actions w-full">
-                    <button onClick={()=>handleShowTitle(course)} className="btn btn-primary w-full text-white font-bold">Select</button>
+                    <button onClick={() => handleShowTitle(course)} className="btn text-2xl w-full text-white font-bold bg-blue-600">Select</button>
                 </div>
             </div>
         </div>
+
     );
 };
 
