@@ -1,12 +1,19 @@
-import './App.css'
+import './App.css';
+import Courses from './component/Courses/Courses';
+import Credits from './component/Credits/Credits';
+import Heading from './component/Heading/Heading';
+
+
 
 function App() {
   
   return (
     <>
-      
-      <h1 className='text-6xl bg-orange'>Knowledge</h1>
-     
+      <Heading></Heading>
+      <div className='flex justify-between px-32 mt-20'>
+        <Courses></Courses>
+        <Credits></Credits>
+      </div>
     </>
   )
 }
